@@ -1,0 +1,13 @@
+---
+layout: rdefault
+---
+
+<section class="portfolio">
+  <div class="work"> </div>
+  <div class="work"> </div>
+  <div class="work"> </div>
+  <div class="work"> </div>
+  <div class="work"> </div>
+  <div class="work"> </div>
+
+</section>

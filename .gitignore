@@ -1,1 +1,11 @@
 .DS_Store
+Gemfile.lock
+*.gem
+pkg
+*.swp
+*~
+_site/
+.bundle/
+.sass-cache
+.ruby-version
+test/

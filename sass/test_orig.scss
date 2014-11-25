@@ -1,0 +1,71 @@
+@import 'bourbon/bourbon';
+@import 'neat/grid-settings';
+@import 'neat/neat';
+ 
+$visual-grid: true;
+$visual-grid-color: #00F6FF;
+$visual-grid-opacity: 0.4;
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$blockcolor: #999;
+$blockcolor-light: #DDD;
+
+
+
+#page-content {
+ @include outer-container;
+}
+/*
+nav, div.sidebar {
+ background-color: $blockcolor;
+ margin: 0em 0 0 0;
+ padding: 0;
+ border-style: solid none none none;
+ border-width: 1px 0 0 0;
+}
+*/
+
+
+canvas#bannerCanvas {
+ width: 1024px;
+ height: 300px;
+}
+
+
+nav {
+ @include span-columns(4);
+ background-color: $blockcolor;
+ border-style: solid none none none;
+ border-width: 1px 0 0 0;
+}
+
+section {
+ @include outer-container;
+ background-color: $blockcolor;
+ margin-bottom: 1em;
+
+&.testnav {
+ @include span-columns(4);
+}
+ &.portfolio {
+   @include span-columns(12);
+   @include omega();
+
+  div {
+
+    &.work {
+     @include span-columns(4 of 12);
+     background-color: $blockcolor-light;
+     margin-bottom: 1em;
+     min-height: 10em;
+    }
+  }
+ }
+}
+
+
+body { 
+  font: 100% $font-stack;
+  color: $primary-color;
+}
