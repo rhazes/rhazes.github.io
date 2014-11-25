@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-@import 'neat/grid-settings';
+//@import 'neat/grid-settings';
 @import 'neat/neat';
  
 
@@ -11,84 +11,57 @@ $body-line-height: 1em;
 $banner-height: 300px;
 $font-size: 75%;
 
+.responsive-element {
+      	@include media(769px) {
+		@include span-columns(6);
+	}
+}
+
 body { 
- @include outer-container;
+// @include outer-container;
   font: 100% $font-stack;
   color: $primary-color;
   line-height: $body-line-height;
 }
 
 
-
-div {
-   &.banner  {
-    @include span-columns(12);
- 
-    canvas {
-     height: $banner-height;
-     width: 1024px;
-     background-color: #F0F;
-    }background-color: #00F;
-   }
+/*div {
 
    &#navbar {
 		height: 20em;
 		//font-size: 90%;		
         @include span-columns(3);
-		background-color: #EE3300;
-   }
-
-   &#blogContent {
-        @include span-columns(7);
-		height: 20em;
-        padding: 0;
-        line-height: $body-line-height*2;
-        text-align: center;
-		background-color: #33EE00;
-//	article {
-//	  @include span-columns
-//	}
-   }
-
-   &.portfolio {
-        @include span-columns(12);
-		height: 20em;
-        padding: 0;
-        line-height: $body-line-height*2;
-        text-align: center;
-		background-color: #33EE00;
-
-        div#project {
-          	@include span-columns(3);
-	  	  	@include omega(4n);
-	  		height: 100%;
-//          padding: 1em;
-	  		background-color: #000;
-			float: left;
-			margin-bottom: 0.5em;
-        }
+		//background-color: #EE3300;
    }
 
    &.main {
 	@include span-columns(12);
 	padding-top: 2em;
    }
+} */
 
-
-   aside {
-	@include span-columns(2);
-	background-color: #000;
-   }
-} 
-
+canvas {
+	@include span-columns(12);
+	height: $banner-height;
+	width: 100%;
+	background-color: #F0F;
+	margin-bottom: 4em;
+}
 
 section{
-//	@include outer-container;
+	@include outer-container;
 //	text-align: center;
 	margin-bottom: 0em;
 
 	& > code, code.block {
 		display: block;
+	}
+
+	&#navbar {
+		height: 20em;
+		//font-size: 90%;		
+        @include span-columns(3);
+		//background-color: #EE3300;		
 	}
 
 	&#gallery {
@@ -108,15 +81,20 @@ section{
 		}	
 	}
 
-	&.work {		
+	&.work {	
 		@include span-columns(9);
 		font-size: 75%;
 
-		div.projectTitle {
+		section.projectTitle {
 			@include span-columns(2 of 9);
+			
+			h1 {
+				margin-top: 0em;
+			
+			}
 		}
 		
-		div.projectDescription {
+		article {
 			@include span-columns(6 of 9);
 
 			p:first-of-type {
@@ -131,7 +109,7 @@ section{
 
 		}
 
-		div.projectTags {
+		aside.projectTags {
 			@include span-columns(1 of 9);
 		}
 	}

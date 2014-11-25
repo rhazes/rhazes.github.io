@@ -4,22 +4,26 @@
   {% include head.html %}
 
     <body>
-	{% include header.html %}
-	<div class="main">
-	<div id="navbar">
-		{% include mainNav.html %}
-	</div>
-	<section class="work">
-	<div class="projectTitle">
-		{{ page.projectTitle }}
-	</div>
-	<div class="projectDescription">
-		{{ content }}
-	</div>
-	<div class="projectTags">
-		{{ page.tags }}
-	</div>
-	</section>
-	</div>
+    	<section>
+			{% include banner.html %}
+
+			<section id="navbar">
+				{% include mainNav.html %}
+			</section>					
+
+			<section class="work">
+				<section class="projectTitle">
+					<h1>
+					{{ page.projectTitle }}
+					</h1>
+				</section>
+				<article class="projectDescription">
+					{{ content }}
+				</article>
+				<aside class="projectTags">
+					{{ page.tags }}
+				</aside>
+			</section>			
+		</section>
     </body>
 </html>
