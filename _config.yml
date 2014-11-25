@@ -16,7 +16,6 @@ kramdown:
 permalink: none
 relative_permalinks: false
 exclude: 
- - sass
  - Procfile
  - README
 
