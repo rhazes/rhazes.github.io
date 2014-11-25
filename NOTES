@@ -1,0 +1,4 @@
+Install bourbon and neat into the _sass directory
+
+bourbon install --path _sass
+
