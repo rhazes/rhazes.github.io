@@ -6,7 +6,7 @@ date: 10.1.2011
 tags: identity processing
 ---
 
-My Kinky Side is an exploration of identity mediated through hair. The installation is broken into three senses of hair, touch, sight and process.
+My Kinky Side is an exploration of identity mediated through hair. The installation is broken into three senses of hair encounters: touch, inspection and process.
 
 
 
