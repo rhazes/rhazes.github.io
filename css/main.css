@@ -12,34 +12,11 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-@media screen and (min-width: 769px) {
-  .responsive-element {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .responsive-element:last-child {
-      margin-right: 0; } }
-
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
   line-height: 1em; }
 
-/*div {
-
-   &#navbar {
-		height: 20em;
-		//font-size: 90%;		
-        @include span-columns(3);
-		//background-color: #EE3300;
-   }
-
-   &.main {
-	@include span-columns(12);
-	padding-top: 2em;
-   }
-} */
 canvas {
   float: left;
   display: block;
@@ -78,13 +55,11 @@ section {
     width: 100%; }
     section#gallery:last-child {
       margin-right: 0; }
-    section#gallery div {
-      height: 4em;
-      line-height: 1em;
-      text-align: left;
-      padding: 0em; }
     section#gallery div.project {
-      height: 21em;
+      height: 100%;
+      text-align: left;
+      padding: 0em;
+      margin-bottom: 2em;
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -95,6 +70,8 @@ section {
         margin-right: 0; }
       section#gallery div.project:nth-child(4n+1) {
         clear: left; }
+      section#gallery div.project img {
+        width: 100%; }
   section.work {
     float: left;
     display: block;

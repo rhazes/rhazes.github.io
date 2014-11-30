@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-//@import 'neat/grid-settings';
+@import 'neat/grid-settings';
 @import 'neat/neat';
  
 
@@ -11,12 +11,6 @@ $body-line-height: 1em;
 $banner-height: 300px;
 $font-size: 75%;
 
-.responsive-element {
-      	@include media(769px) {
-		@include span-columns(6);
-	}
-}
-
 body { 
 // @include outer-container;
   font: 100% $font-stack;
@@ -24,21 +18,6 @@ body {
   line-height: $body-line-height;
 }
 
-
-/*div {
-
-   &#navbar {
-		height: 20em;
-		//font-size: 90%;		
-        @include span-columns(3);
-		//background-color: #EE3300;
-   }
-
-   &.main {
-	@include span-columns(12);
-	padding-top: 2em;
-   }
-} */
 
 canvas {
 	@include span-columns(12);
@@ -66,18 +45,21 @@ section{
 
 	&#gallery {
 		@include span-columns(12);
-		div {
-			height: $body-line-height*4;
-			line-height: $body-line-height;
+
+		div.project {			
+			height: 100%;
+			//line-height: $body-line-height;
 			text-align: left;
 			padding: 0em; //1em;
-		}
-
-		div.project {
+			margin-bottom: 2em;
 			//font-size: 0.78em;
-			height: 21em;
+			//height: 21em;
 			@include span-columns(3);
 			@include omega(4n);
+
+			img {
+				width:100%;
+			}
 		}	
 	}
 

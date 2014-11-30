@@ -5,4 +5,7 @@ _site
 .DS_Store
 .bundle
 .jekyll
+sublime.project
+
+
 
