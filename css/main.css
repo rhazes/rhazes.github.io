@@ -52,7 +52,8 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    margin-left: 17.05961%; }
     section#gallery:last-child {
       margin-right: 0; }
     section#gallery div.project {
@@ -66,12 +67,16 @@ section {
       width: 23.23176%; }
       section#gallery div.project:last-child {
         margin-right: 0; }
-      section#gallery div.project:nth-child(4n) {
+      section#gallery div.project:nth-child(3n) {
         margin-right: 0; }
-      section#gallery div.project:nth-child(4n+1) {
+      section#gallery div.project:nth-child(3n+1) {
         clear: left; }
       section#gallery div.project img {
-        width: 100%; }
+        width: 200px;
+        height: 133px; }
+      section#gallery div.project h3 {
+        color: #f00;
+        margin-top: 0em; }
   section.work {
     float: left;
     display: block;

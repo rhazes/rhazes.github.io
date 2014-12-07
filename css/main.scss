@@ -1,7 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/grid-settings';
 @import 'neat/neat';
- 
+
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
@@ -11,7 +11,7 @@ $body-line-height: 1em;
 $banner-height: 300px;
 $font-size: 75%;
 
-body { 
+body {
 // @include outer-container;
   font: 100% $font-stack;
   color: $primary-color;
@@ -20,81 +20,88 @@ body {
 
 
 canvas {
-	@include span-columns(12);
-	height: $banner-height;
-	width: 100%;
-	background-color: #F0F;
-	margin-bottom: 4em;
+ @include span-columns(12);
+ height: $banner-height;
+ width: 100%;
+ background-color: #F0F;
+ margin-bottom: 4em;
 }
 
 section{
-	@include outer-container;
-//	text-align: center;
-	margin-bottom: 0em;
+ @include outer-container;
+// text-align: center;
+ margin-bottom: 0em;
 
-	& > code, code.block {
-		display: block;
-	}
+ & > code, code.block {
+  display: block;
+ }
 
-	&#navbar {
-		height: 20em;
-		//font-size: 90%;		
+ &#navbar {
+  height: 20em;
+  //font-size: 90%;
         @include span-columns(3);
-		//background-color: #EE3300;		
-	}
+  //background-color: #EE3300;
+ }
 
-	&#gallery {
-		@include span-columns(12);
+ &#gallery {
+  @include span-columns(12);
+  @include shift(2);
+  div.project {
+   height: 100%;
+   //line-height: $body-line-height;
+   text-align: left;
+   padding: 0em; //1em;
+   margin-bottom: 2em;
+   //font-size: 0.78em;
+   //height: 21em;
+   @include span-columns(3);
+   @include omega(3n);
 
-		div.project {			
-			height: 100%;
-			//line-height: $body-line-height;
-			text-align: left;
-			padding: 0em; //1em;
-			margin-bottom: 2em;
-			//font-size: 0.78em;
-			//height: 21em;
-			@include span-columns(3);
-			@include omega(4n);
+   img {
+    width:200px;
+    height:133px;
+   }
 
-			img {
-				width:100%;
-			}
-		}	
-	}
+   h3 {
+     color: #f00;
+     margin-top: 0em;
 
-	&.work {	
-		@include span-columns(9);
-		font-size: 75%;
+   }
+  }
+ }
 
-		section.projectTitle {
-			@include span-columns(2 of 9);
-			
-			h1 {
-				margin-top: 0em;
-			
-			}
-		}
-		
-		article {
-			@include span-columns(6 of 9);
+ &.work {
+  @include span-columns(9);
+  font-size: 75%;
 
-			p:first-of-type {
-				margin-top: 0em;
-			}
+  section.projectTitle {
+   @include span-columns(2 of 9);
 
-			img {
-				@include span-columns(6 of 6);
-				padding: 2em 0em;
-			}
+   h1 {
+    margin-top: 0em;
+
+   }
+  }
+
+  article {
+   @include span-columns(6 of 9);
+
+   p:first-of-type {
+    margin-top: 0em;
+   }
+
+   img {
+    @include span-columns(6 of 6);
+    padding: 2em 0em;
+   }
 
 
-		}
+  }
 
-		aside.projectTags {
-			@include span-columns(1 of 9);
-		}
-	}
+  aside.projectTags {
+   @include span-columns(1 of 9);
+  }
+ }
 }
 
 
