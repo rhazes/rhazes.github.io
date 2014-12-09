@@ -43,9 +43,39 @@ section{
   //background-color: #EE3300;
  }
 
+ // Styling for gallery landing page
+
  &#gallery {
   @include span-columns(12);
   @include shift(2);
+
+  figure {
+   @include span-columns(3);
+   @include omega(3n);
+
+   height: 100%;
+   text-align: left;
+   padding: 0em; //1em;
+   margin: 0 0 2em 0em;
+
+
+   img {
+    width:200px;
+    height:133px;
+   }
+
+   h3{
+     color: #f00;
+     margin-top: 0em;
+
+   }
+    figcaption {
+     //color: #000;
+     margin-top: 0.5em;
+
+   }
+  }
+
   div.project {
    height: 100%;
    //line-height: $body-line-height;
@@ -70,6 +100,7 @@ section{
   }
  }
 
+//Styling for posts about gallery work
  &.work {
   @include span-columns(9);
   font-size: 75%;
