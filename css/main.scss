@@ -76,7 +76,20 @@ section{
     figcaption {
      //color: #000;
      margin-top: 0.5em;
+   }
 
+
+   a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: $primary-color;
+   }
+   div.gallery-title {
+	margin-top: 0.5em;
+
+	a:hover {
+	   text-decoration: none;
+	   border-bottom: 1px #333 dotted;
+   	}
    }
   }
 

@@ -79,6 +79,14 @@ section {
         margin-top: 0em; }
       section#gallery figure figcaption {
         margin-top: 0.5em; }
+      section#gallery figure a, section#gallery figure a:link, section#gallery figure a:visited, section#gallery figure a:hover {
+        text-decoration: none;
+        color: #333; }
+      section#gallery figure div.gallery-title {
+        margin-top: 0.5em; }
+        section#gallery figure div.gallery-title a:hover {
+          text-decoration: none;
+          border-bottom: 1px #333 dotted; }
     section#gallery div.project {
       height: 100%;
       text-align: left;
