@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+    	<section>
+			{% include banner.html %}
+
+			<section id="navbar">
+				{% include mainNav.html %}
+			</section>					
+
+			<section class="work">
+				<section class="projectTitle">
+					<h1>
+					{{ page.projectTitle }}
+					</h1>
+				</section>
+				<article class="projectDescription">
+					{{ content }}
+				</article>
+				<aside class="projectTags">
+					{{ page.tags }}
+				</aside>
+<iframe src="//player.vimeo.com/video/68739505" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://{{ page.videolink }}">{{ page.videotitle }}</a> from <a href="http://vimeo.com/oliverellmers">Oliver Ellmers</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+			</section>			
+		</section>
+    </body>
+</html>
