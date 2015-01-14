@@ -1,6 +1,7 @@
 ---
 layout: work
 projectTitle: Cultural Codes
+projectDate: 2013
 permalink: did/cultural-codes/index.html
 tags: installation parametric_modeling collaboration
 ---

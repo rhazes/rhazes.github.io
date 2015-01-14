@@ -126,11 +126,12 @@ section {
       float: left;
       display: block;
       margin-right: 3.16844%;
-      width: 19.75788%; }
+      width: 19.75788%;
+      margin: 0em; }
       section.work section.projectTitle:last-child {
         margin-right: 0; }
       section.work section.projectTitle h1 {
-        margin-top: 0em; }
+        margin: 0em; }
     section.work article {
       float: left;
       display: block;
@@ -140,13 +141,13 @@ section {
         margin-right: 0; }
       section.work article p:first-of-type {
         margin-top: 0em; }
-      section.work article img {
+      section.work article img, section.work article iframe {
         float: left;
         display: block;
         margin-right: 4.82916%;
         width: 100%;
         padding: 2em 0em; }
-        section.work article img:last-child {
+        section.work article img:last-child, section.work article iframe:last-child {
           margin-right: 0; }
     section.work aside.projectTags {
       float: left;

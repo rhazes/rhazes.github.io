@@ -1,6 +1,7 @@
 ---
 layout: work
 projectTitle: Forks In Sockets
+projectDate: 2013
 permalink: did/forks-in-sockets/index.html
 tags: vj performance collaboration
 ---

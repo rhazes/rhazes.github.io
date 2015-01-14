@@ -129,10 +129,9 @@ section{
 
   section.projectTitle {
    @include span-columns(2 of 9);
-
+   margin: 0em;
    h1 {
-    margin-top: 0em;
-
+    margin: 0em;
    }
   }
 
@@ -143,7 +142,7 @@ section{
     margin-top: 0em;
    }
 
-   img {
+   img,iframe {
     @include span-columns(6 of 6);
     padding: 2em 0em;
    }
@@ -152,6 +151,7 @@ section{
   aside.projectTags {
    @include span-columns(1 of 9);
   }
+  
  }
 }
 
