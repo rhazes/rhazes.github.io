@@ -2,10 +2,13 @@
 <html>
   {% include head.html %}
     <body>
-        <div id="banner"></div>
+        <!-- <div id="banner"></div> -->
     	<section>
+		<section id="navbar">
+			{% include mainNav.html %}
+		</section>					
 			{{ content }}
-		</section>
+	</section>
     </body>
 </html>
 

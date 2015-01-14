@@ -10,8 +10,8 @@ $blockcolor-light: #DDD;
 $body-line-height: 1em;
 $banner-height: 300px;
 $font-size: 75%;
-$gallery-img-width: 200px;
-$gallery-img-height: 133px;
+$gallery-img-width: 180px;
+$gallery-img-height: $gallery-img-width * .67; //133px;
 $post-img-width: 670px;
 $post-img-height: 446px;
 
@@ -21,6 +21,14 @@ body {
   color: $primary-color;
   line-height: $body-line-height;
 }
+   a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: $primary-color;
+   }
+	a:hover {
+	   text-decoration: none;
+	   border-bottom: 1px #333 dotted;
+   	}
 
 
 canvas {
@@ -34,6 +42,7 @@ canvas {
 section{
  @include outer-container;
 // text-align: center;
+ margin-top: 4em;
  margin-bottom: 0em;
 
  & > code, code.block {
@@ -42,30 +51,33 @@ section{
 
  &#navbar {
   height: 20em;
-  //font-size: 90%;
-        @include span-columns(3);
+  font-size: $font-size;
+  @include span-columns(3);
   //background-color: #EE3300;
  }
 
  // Styling for gallery landing page
 
  &#gallery {
-  @include span-columns(12);
-  @include shift(2);
+  @include span-columns(9);
+//  @include shift(2);
 
   figure {
    @include span-columns(3);
    @include omega(3n);
 
+   font-size: $font-size;
    height: 100%;
    text-align: left;
    padding: 0em; //1em;
    margin: 0 0 2em 0em;
 
-
+   a:hover {
+      border: none;
+   }
    img {
-    width:200px;
-    height:133px;
+    width: $gallery-img-width;
+    height: $gallery-img-height;
    }
 
    h3{
@@ -78,19 +90,12 @@ section{
      margin-top: 0.5em;
    }
 
-
-   a, a:link, a:visited, a:hover {
-	text-decoration: none;
-	color: $primary-color;
-   }
    div.gallery-title {
-	margin-top: 0.5em;
-
 	a:hover {
-	   text-decoration: none;
 	   border-bottom: 1px #333 dotted;
    	}
    }
+
   }
 
   div.project {
@@ -120,7 +125,7 @@ section{
 //Styling for posts about gallery work
  &.work {
   @include span-columns(9);
-  font-size: 75%;
+  font-size: $font-size;
 
   section.projectTitle {
    @include span-columns(2 of 9);
@@ -142,8 +147,6 @@ section{
     @include span-columns(6 of 6);
     padding: 2em 0em;
    }
-
-
   }
 
   aside.projectTags {

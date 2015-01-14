@@ -17,6 +17,14 @@ body {
   color: #333;
   line-height: 1em; }
 
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: #333; }
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px #333 dotted; }
+
 canvas {
   float: left;
   display: block;
@@ -33,6 +41,7 @@ section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4em;
   margin-bottom: 0em; }
   section:after {
     content: "";
@@ -42,6 +51,7 @@ section {
     display: block; }
   section#navbar {
     height: 20em;
+    font-size: 75%;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -52,8 +62,7 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    margin-left: 17.05961%; }
+    width: 74.41059%; }
     section#gallery:last-child {
       margin-right: 0; }
     section#gallery figure {
@@ -61,6 +70,7 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 23.23176%;
+      font-size: 75%;
       height: 100%;
       text-align: left;
       padding: 0em;
@@ -71,22 +81,18 @@ section {
         margin-right: 0; }
       section#gallery figure:nth-child(3n+1) {
         clear: left; }
+      section#gallery figure a:hover {
+        border: none; }
       section#gallery figure img {
-        width: 200px;
-        height: 133px; }
+        width: 180px;
+        height: 120.6px; }
       section#gallery figure h3 {
         color: #f00;
         margin-top: 0em; }
       section#gallery figure figcaption {
         margin-top: 0.5em; }
-      section#gallery figure a, section#gallery figure a:link, section#gallery figure a:visited, section#gallery figure a:hover {
-        text-decoration: none;
-        color: #333; }
-      section#gallery figure div.gallery-title {
-        margin-top: 0.5em; }
-        section#gallery figure div.gallery-title a:hover {
-          text-decoration: none;
-          border-bottom: 1px #333 dotted; }
+      section#gallery figure div.gallery-title a:hover {
+        border-bottom: 1px #333 dotted; }
     section#gallery div.project {
       height: 100%;
       text-align: left;
