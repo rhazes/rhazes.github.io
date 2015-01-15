@@ -17,7 +17,7 @@ _Perkins, Spell, et. al (accepted publication, International Journal of Interior
 _photo credit: Fumio Araki_ 
 
 
-In addition to the cultural reflections in the design and process the structure is a social intervention. Otitis media, glue ear, is an ear condition that effects children and leads to hearing difficulty and often times is correlated with poor performance in school. In New Zealand the condition disproportionately effects M&#257;ori. Cultural Codes is constructed from felt sound tiles and is designed to improve acoustics in spaces. The geometric design reflecting Maori craft are also a cultural connector for students and serve as a pedagogical catalyst for introducing students to the mathematics embedded within their cultural productions.
+In addition to the cultural reflections in the design and process the structure is a social intervention. [Otitis media](http://en.wikipedia.org/wiki/Otitis_media), glue ear, is an ear condition that effects children and leads to hearing difficulty and often times is correlated with poor performance in school. In New Zealand the condition disproportionately effects M&#257;ori. Cultural Codes is constructed from felt sound tiles and is designed to improve acoustics in spaces. The geometric design reflecting Maori craft are also a cultural connector for students and serve as a pedagogical catalyst for introducing students to the mathematics embedded within their cultural productions.
 
 This was a collaborative exhbition between myself, Natasha Perkins in the Victoria University of Wellington, School of Architecture and graduate students in the Schools of Architecture and Design.  Read more about the project at the [Sound Concepts Research Programme Page](http://www.soundconcepts.co.nz/).
 
