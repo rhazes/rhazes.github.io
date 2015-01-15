@@ -21,6 +21,7 @@ exclude:
  - sublime.project
  - neat
  - bourbon
+ - dev
 
 # Set the Sass partials directory, as we're using @imports
 sass:
