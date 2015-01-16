@@ -149,6 +149,8 @@ section {
         padding: 2em 0em; }
         section.work article img:last-child {
           margin-right: 0; }
+      section.work article img:first-child {
+        padding: 0em 0em 2em 0em; }
       section.work article iframe {
         float: left;
         display: block;

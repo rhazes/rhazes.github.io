@@ -146,6 +146,10 @@ section{
     @include span-columns(6 of 6);
     padding: 2em 0em;
    }
+ 
+   img:first-child {
+    padding: 0em 0em 2em 0em;
+   }
 
    iframe {
     @include span-columns(6 of 6);
