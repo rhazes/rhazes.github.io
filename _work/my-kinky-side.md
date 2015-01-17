@@ -2,7 +2,7 @@
 layout: work-vimeo
 projectTitle: My Kinky Side
 projectDate: 2011
-videolink: 
+videolink: 32384420
 videotitle: My Kinky Side
 permalink: made/my-kinky-side/index.html
 tags: processing photography hair
