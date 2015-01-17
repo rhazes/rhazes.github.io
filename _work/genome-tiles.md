@@ -1,7 +1,7 @@
 ---
 layout: work
 projectTitle: genome tiles
-permalink: did/genome-tiles/index.html
+permalink: made/genome-tiles/index.html
 date: 08.1.2005
 tags: data genomics installation ceramic
 ---

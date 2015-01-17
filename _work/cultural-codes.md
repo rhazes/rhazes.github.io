@@ -2,7 +2,7 @@
 layout: work
 projectTitle: Cultural Codes
 projectDate: 2013
-permalink: did/cultural-codes/index.html
+permalink: made/cultural-codes/index.html
 tags: installation parametric_modeling collaboration
 ---
 Cultural Codes, exhibited at Tokyo Designer's Week in 2013, was an investigation into the practice of living culture within contemporary M&#257;ori art forms. The project used parametric methods to design an interior structure based on traditional M&#257;ori weaving patterns and embodying core concepts of M&#257;ori visual culture, Te Whare Pora (Tay-Fah-ay Pu-rah).

@@ -1,7 +1,7 @@
 ---
 layout: work
 projectTitle: biotinis
-permalink: did/biotinis/index.html
+permalink: made/biotinis/index.html
 date: 2008
 tags: data genomics 
 ---

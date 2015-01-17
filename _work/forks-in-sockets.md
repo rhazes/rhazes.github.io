@@ -2,7 +2,7 @@
 layout: work
 projectTitle: Forks In Sockets
 projectDate: 2013
-permalink: did/forks-in-sockets/index.html
+permalink: made/forks-in-sockets/index.html
 tags: vj performance collaboration
 ---
 _The young dissident naturally wanted to play tricks - and misuse all technology. That's how electronic music was born. We started making music with devices made for other purposes. Technology won't take control as long as man can misuse it._  

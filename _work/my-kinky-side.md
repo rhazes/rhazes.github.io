@@ -4,7 +4,7 @@ projectTitle: My Kinky Side
 projectDate: 2011
 videolink: 
 videotitle: My Kinky Side
-permalink: did/my-kinky-side/index.html
+permalink: made/my-kinky-side/index.html
 tags: processing photography hair
 ---
 My Kinky Side is a self-portrait filtered through tactile, visual and kinetic presentations of hair. My Kinky Side was part of the 2011 Design Media Arts Exhibition, One, Two, One, Two, at UCLA's New Wight Gallery. 

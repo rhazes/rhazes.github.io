@@ -2,7 +2,7 @@
 layout: work
 projectTitle: THINK
 projectDate: 2011
-permalink: did/think/index.html
+permalink: made/think/index.html
 tags: data installation
 ---
 

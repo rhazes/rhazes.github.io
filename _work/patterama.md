@@ -2,7 +2,7 @@
 layout: work-vimeo
 projectTitle: Patterama
 projectDate: 2013
-permalink: did/patterama/index.html
+permalink: made/patterama/index.html
 videolink: vimeo.com/68739505
 videotitle: Conway's Game of Life
 tags: installation projection generative processing

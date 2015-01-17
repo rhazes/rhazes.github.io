@@ -4,7 +4,7 @@ projectTitle: Veg Life
 projectDate: 2010
 videolink: 
 videotitle: Veg Life
-permalink: did/veg-life/index.html
+permalink: made/veg-life/index.html
 tags: performance
 ---
 
