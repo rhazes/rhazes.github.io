@@ -166,18 +166,29 @@ section{
     margin-top: 0em;
    }
 
-   img,iframe {
+   img {
     @include span-columns(6 of 6);
     padding: 2em 0em;
    }
+ 
+   img:first-child {
+    padding: 0em 0em 2em 0em;
+   }
+
+   iframe {
+    @include span-columns(6 of 6);
+    height: 446px;
+    padding: 2em 0em;
+  }
+
   }
 
   aside.projectTags {
    @include span-columns(1 of 9);
   }
-  
  }
 }
+
 
 
 

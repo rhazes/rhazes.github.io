@@ -1,8 +1,8 @@
 ---
 layout: work
 projectTitle: Biological Arc Diagrams
-permalink: wo/bard.html
-tags: visualization genomics
+permalink: made/biological-arc-diagrams/index.html
+tags: data visualization
 ---
 Biological Arc Diagrams (BARD) was developed as part of my PhD research that investigated the use of information visualization in comparative genomic analysis. BARD is an information visualization software tool for visualizing the repetitive structures in biological sequences.  The goal of the project is to provide a visual metaphor to aid biological feature discovery in comparative genomics.  The salient biological features are rendered as interesting geometric patterns. The software is based on the Arc Diagram algorithm developed by [Martin Wattenburg](http://bewitched.com).
 

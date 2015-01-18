@@ -1,14 +1,19 @@
----
-layout: default
----
-<div class="post">
+<html>
+  {% include head.html %}
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-  </header>
+    <body>
+    	<section>
+<!--			{% include banner.html %} -->
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+			<section id="navbar">
+				{% include mainNav.html %}
+			</section>					
 
-</div>
+			<section class="work">
+				<article class="projectDescription">
+					{{ content }}
+				</article>
+			<section>
+    </body>
+</html>
+

@@ -167,13 +167,24 @@ section {
         margin-right: 0; }
       section.work article p:first-of-type {
         margin-top: 0em; }
-      section.work article img, section.work article iframe {
+      section.work article img {
         float: left;
         display: block;
         margin-right: 4.82916%;
         width: 100%;
         padding: 2em 0em; }
-        section.work article img:last-child, section.work article iframe:last-child {
+        section.work article img:last-child {
+          margin-right: 0; }
+      section.work article img:first-child {
+        padding: 0em 0em 2em 0em; }
+      section.work article iframe {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%;
+        height: 446px;
+        padding: 2em 0em; }
+        section.work article iframe:last-child {
           margin-right: 0; }
     section.work aside.projectTags {
       float: left;
