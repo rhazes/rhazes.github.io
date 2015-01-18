@@ -125,7 +125,7 @@ function preload() {
 
 function setup() {
   var canvas = createCanvas(900,300);
-  canvas.parent("banner");
+  canvas.parent("p5container");
   building = buildBuilding(50,90,50,200,[50,50,50]); //new Building(50,90,50,200, [50,50,50] );
   noStroke();
 

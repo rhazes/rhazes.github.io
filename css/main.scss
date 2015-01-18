@@ -21,7 +21,30 @@ body {
   color: $primary-color;
   line-height: $body-line-height;
 }
-   a, a:link, a:visited, a:hover {
+
+body#landingPage {
+  @include outer-container;
+
+ .frame {
+  @include span-columns(12);
+  padding: 10em;
+  text-align: center;
+ }
+  
+  #p5container {
+  @include span-columns(12);
+  }
+
+  canvas {
+    margin-bottom: 4em;
+  }
+}
+/*
+*/
+
+
+
+  a, a:link, a:visited, a:hover {
 	text-decoration: none;
 	color: $primary-color;
    }
@@ -30,7 +53,7 @@ body {
 	   border-bottom: 1px #333 dotted;
    	}
 
-
+/*
 canvas {
  @include span-columns(12);
  height: $banner-height;
@@ -38,6 +61,7 @@ canvas {
  background-color: #F0F;
  margin-bottom: 4em;
 }
+*/
 
 section{
  @include outer-container;
