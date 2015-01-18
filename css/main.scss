@@ -27,8 +27,11 @@ body#landingPage {
 
  .frame {
   @include span-columns(12);
-  padding: 10em;
+  padding: 5em 10em 10em 10em;
   text-align: center;
+  a { 
+   font-size: 200%;
+}
  }
   
   #p5container {

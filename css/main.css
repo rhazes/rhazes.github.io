@@ -30,10 +30,12 @@ body#landingPage {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    padding: 10em;
+    padding: 5em 10em 10em 10em;
     text-align: center; }
     body#landingPage .frame:last-child {
       margin-right: 0; }
+    body#landingPage .frame a {
+      font-size: 200%; }
   body#landingPage #p5container {
     float: left;
     display: block;
