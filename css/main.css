@@ -1,3 +1,9 @@
+/*
+$visual-grid: true;
+$visual-grid-color: yellow;
+$visual-grid-index: back;
+$visual-grid-opacity: 0.5;
+*/
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
@@ -35,7 +41,8 @@ body#landingPage {
     body#landingPage .frame:last-child {
       margin-right: 0; }
     body#landingPage .frame a {
-      font-size: 200%; }
+      font-size: 200%;
+      border: none; }
   body#landingPage #p5container {
     float: left;
     display: block;
@@ -50,10 +57,12 @@ body#landingPage {
 */
 a, a:link, a:visited, a:hover {
   text-decoration: none;
-  color: #333; }
+  color: #999;
+  border-bottom: 1px #333 dotted; }
 
 a:hover {
   text-decoration: none;
+  color: #333;
   border-bottom: 1px #333 dotted; }
 
 /*
@@ -69,8 +78,7 @@ section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4em;
-  margin-bottom: 0em; }
+  margin-top: 4em; }
   section:after {
     content: "";
     display: table;
@@ -83,9 +91,16 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%; }
+    width: 23.23176%;
+    margin-right: 0em; }
     section#navbar:last-child {
       margin-right: 0; }
+    section#navbar a, section#navbar a:link, section#navbar a:visited, section#navbar a:hover {
+      text-decoration: none;
+      color: #333;
+      border: none; }
+    section#navbar a:hover {
+      border-bottom: 1px #333 dotted; }
   section#gallery {
     float: left;
     display: block;
@@ -109,7 +124,8 @@ section {
         margin-right: 0; }
       section#gallery figure:nth-child(3n+1) {
         clear: left; }
-      section#gallery figure a:hover {
+      section#gallery figure a, section#gallery figure a:hover {
+        color: #333;
         border: none; }
       section#gallery figure img {
         width: 180px;

@@ -6,5 +6,6 @@ _site
 .jekyll
 sublime.project
 *.swp
+*.bak
 
 

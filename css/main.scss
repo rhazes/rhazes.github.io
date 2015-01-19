@@ -5,6 +5,8 @@
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$link-color: #999;
+$link-hover-style: 1px #333 dotted; 
 $blockcolor: #999;
 $blockcolor-light: #DDD;
 $body-line-height: 1em;
@@ -31,6 +33,7 @@ body#landingPage {
   text-align: center;
   a { 
    font-size: 200%;
+   border: none;
 }
  }
   
@@ -49,12 +52,15 @@ body#landingPage {
 
   a, a:link, a:visited, a:hover {
 	text-decoration: none;
-	color: $primary-color;
+	color: $link-color;
+//        background-color: #aaa;
+	border-bottom: 1px #333 dotted;
    }
-	a:hover {
-	   text-decoration: none;
-	   border-bottom: 1px #333 dotted;
-   	}
+  a:hover {
+   text-decoration: none;
+   color: $primary-color;
+   border-bottom: 1px #333 dotted;
+  }
 
 /*
 canvas {
@@ -70,7 +76,8 @@ section{
  @include outer-container;
 // text-align: center;
  margin-top: 4em;
- margin-bottom: 0em;
+// margin-bottom: 0em;
+//   margin: 4em 0em 0em 0em;
 
  & > code, code.block {
   display: block;
@@ -80,7 +87,17 @@ section{
   height: 20em;
   font-size: $font-size;
   @include span-columns(3);
+  margin-right: 0em;
   //background-color: #EE3300;
+
+   a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: $primary-color;
+ 	border: none;
+   }
+   a:hover {
+      border-bottom:$link-hover-style;
+	}
  }
 
  // Styling for gallery landing page
@@ -99,7 +116,8 @@ section{
    padding: 0em; //1em;
    margin: 0 0 2em 0em;
 
-   a:hover {
+   a, a:hover {
+      color: $primary-color;
       border: none;
    }
    img {
@@ -147,7 +165,7 @@ section{
 
    }
   }
- }
+ } // END Gallery
 
 //Styling for posts about gallery work
  &.work {
