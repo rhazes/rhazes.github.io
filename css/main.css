@@ -219,7 +219,8 @@ section {
       float: left;
       display: block;
       margin-right: 3.16844%;
-      width: 8.29472%; }
+      width: 8.29472%;
+      font-size: 75%; }
       section.work aside.projectTags:last-child {
         margin-right: 0; }
 

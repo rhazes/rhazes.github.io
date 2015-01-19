@@ -220,6 +220,7 @@ section{
 
   aside.projectTags {
    @include span-columns(1 of 9);
+   font-size: 75%;
   }
  }
 }
