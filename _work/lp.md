@@ -10,7 +10,7 @@ tags: mixed-media
 
 LP is an album constructed from my hair. 
 
-LPs are playable (see [DJ Incognegro](http://rhaz.es/made/dj-incognegro)).  
+LPs are playable (see [DJ Incognegro](/is/dj-incognegro)).  
 
 Hair is readily interpreted as an identifier either socially through the relationship between hair styling and (sub)culture or as containers of biochemical identification in the form of DNA and records of one's chemical ingestion.  
 

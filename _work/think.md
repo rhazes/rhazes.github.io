@@ -15,7 +15,7 @@ For their centennial celebration IBM commissioned THINK, a globally travelling e
 ![mirada-traffic][img00]
 _photo credit Mirada Studios_
 
-My piece, 'Traffic', was a chapter in 5 chapter data narrative (including finance, air quality, solar energy  and water ) about New Yorkers. The Traffic chapter tells the story of NY traffic in 2 parts. Part 1 is an agent-based animation. The agents in the animation are intelligently programmed with varying aggressive driving behaviors that eventually results in grid locked traffic. Part 2 utilizes real time traffic data from the intersection of Broadway and Lincoln afternoons to visualize the traffic. The traffic is rendered as a knot that dynamically changes its 'knottiness' to reflect the current level of traffic and the traffic levels over the prior 24 hours.
+My piece, 'Traffic', was a chapter in a 5 chapter data narrative (including finance, air quality, solar energy  and water ) about New Yorkers. The Traffic chapter tells the story of NY traffic in 2 parts. Part 1 is an agent-based animation. The agents in the animation are intelligently programmed with varying aggressive driving behaviors that eventually results in grid locked traffic. Part 2 utilizes real time traffic data from the intersection of Broadway and Lincoln afternoons to visualize the traffic. The traffic is rendered as a knot that dynamically changes its 'knottiness' to reflect the current level of traffic and the traffic levels over the prior 24 hours.
 
 You can watch the production video [here](http://mirada.com/stories/ibm).
 
