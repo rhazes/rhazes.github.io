@@ -5,8 +5,17 @@ permalink: made/biotinis/index.html
 date: 2008
 tags: data genomics 
 ---
+Biotinis is a genome cookbook of recipes to modify human physical traits. 
+The recipes describe enhancement modifications to target regions in genes associated with traits such as, metabolic rate, eye color, and genes believed to associated with intelligence. 
+These targets were identified from molecular biology and genetics research literature.
+The genes in the recipes are the DNA and protein sequences that have been associated with the corresponding traits.
+ recipes are derived from molecular biology and genetic research findings. 
 
-This is an ambient data art piece. The tile color and order correspond to 2 genes researched at Duke University: BRCA1 - breast cancer and BMP1 - bone morphogenic protein. The genes were selected for their societal importance. Mutations in BRCA1 are predicted to be responsible for more than 80% of inherited breast and ovarian cancers. BMP1 encodes a protein that forms cartilage. 
+ Conceptually the cookbook marries people's obsession with control with our decreasing appetite for complexity.  Consider interactions with popular science and technology today: three-minute sound-bites on complex medical issues; grossly trivialized treatments of complex research findings (e.g. "drink red wine to live longer"); mildly informative pharmaceutical commercials that spend more time warning of side effects than benefits, yet still encourage consumers to prompt their doctors to prescribe them.
+
+
+
+
 
 ![figure 1][img01]
 
