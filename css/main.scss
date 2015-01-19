@@ -183,23 +183,37 @@ section{
   article {
    @include span-columns(6 of 9);
 
+   p {
+     padding: 0em 0em;
+     margin-top: 2em;
+   }
+
    p:first-of-type {
     margin-top: 0em;
    }
 
    img {
     @include span-columns(6 of 6);
-    padding: 2em 0em;
+    padding: 1em 0em;
+    height: 100%;
    }
- 
+
+   img + em {
+     padding-bottom: 2em;
+   }
+/* 
    img:first-child {
     padding: 0em 0em 2em 0em;
    }
-
+*/
    iframe {
     @include span-columns(6 of 6);
     height: 446px;
     padding: 2em 0em;
+  }
+
+  iframe:first-of-type {
+     padding-top: 0em;
   }
 
   }
