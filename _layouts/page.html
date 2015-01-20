@@ -9,11 +9,25 @@
 				{% include mainNav.html %}
 			</section>					
 
-			<section class="work">
-				<article class="projectDescription">
+			<section class="work" >
+				<article class="projectDescription" id="content" >
 					{{ content }}
 				</article>
-			<section>
+			{% if page.contactInfo %}
+		            <script language=javascript>
+						<!-- spam-proof email script
+						var username = "email";
+						var hostname = "rhaz.es";
+						var linktext = username + "@" + hostname;
+						var el = document.getElementById('content');
+						el.innerHTML += "contact me:  <a href=" + "mail" + "to:" + username + "@" + hostname + ">" + linktext + "</a>";
+
+						//document.write("contact me: <a href=" + "mail" + "to:" + username +
+						//	"@" + hostname + ">" + linktext + "</a>")
+							//-->
+			</script>
+ 			{% endif %}
+	<section>
     </body>
 </html>
 

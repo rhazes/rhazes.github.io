@@ -7,6 +7,5 @@ videotitle: DJ Incognegro
 permalink: is/dj-incognegro/index.html
 tags: performance
 ---
-
-
+UCLA New Wight Gallery, 2012.
 
