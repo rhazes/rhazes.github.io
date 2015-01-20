@@ -1,7 +1,7 @@
 "use strict";
 var minWinCount = 10;
 var maxWinCount = 20;
-var bLayer;
+var bLayer1, bLayer2;
 
 var Building =  {
 		  l : 0,
@@ -15,7 +15,7 @@ var Building =  {
 			   rect(this.l,this.t,this.w,this.h); }};
 
 
-function buildWindows( bldg ) {
+function buildWindows( bldg, prob ) {
 	 bldg.windows = [];
 	 var nAcross = int(random(10, 20)); 
 	 var nHigh = int(random(10, 20)); 
@@ -28,27 +28,31 @@ function buildWindows( bldg ) {
 	 //a little spacing from the edge of the building
 	 var x = bldg.l + (1.0 / (2.0 * nAcross) );
 	 var y = bldg.t + winHt;
- 
+
+	 var winProb = random(0.3,0.9); 
 	 for(var i=0; i < nAcross; i++) {
 	    for(var j=0; j < nHigh; j++) {
+   		if(random() < winProb ) {
+ 		  var c = random(100,250);
 		bldg.windows.push( {
 			x: x + (i * winWd * 2.0),
 			y: y + (j * winHt * 2.0),
 			w: winWd,
 			h: winHt,
-		 	col: 255} );
+		 	col: c} );
+		}
 	    }
 	  }
 };
 
-function buildBuilding(left, top, aWidth, aHeight, aColor) {
+function buildBuilding(left, top, aWidth, aHeight, aColor, winPerc) {
   var b = Object.create(Building);
   b.l = left;
   b.t = top;
   b.w = aWidth;
   b.h = aHeight;
   b.color = aColor;
-  buildWindows(b);
+  buildWindows(b, winPerc);
 //  b.draw();
   return b;
 }
@@ -82,19 +86,20 @@ Building.prototype.buildWindows = function() {
   }
 };
 */
-
+var imgx = 650;
+var imgy = 50; 
 function drawRhazsign() {
 
   var cosinterp = cos(millis() * rate);
   var sininterp = abs(sin(millis() * rate));
-  var imgx = map(cosinterp,-1.0,1.0,minSignX,maxSignX);
-  var imgy = map(sininterp,0,1.0,50,0);
-
-  fill(200,200,0,100);
+//  var imgx = map(cosinterp,-1.0,1.0,minSignX,maxSignX);
+//  var imgy = map(sininterp,0,1.0,50,0);
+//  imgx = 400; imgy = 200;
+  fill(150,150,150,100);
   beginShape();
-  vertex(imgx,imgy + 67.5);
-  vertex(imgx + 158, imgy + 67.5);
-  vertex(300, height - 30);
+  vertex(imgx,imgy + 0.5 * shadow.height);
+  vertex(imgx + shadow.width, imgy + .75 * shadow.height);
+  vertex(500, height - 30);
   endShape(CLOSE);
 
   image(shadow,imgx,imgy);
@@ -107,26 +112,31 @@ var signRate = 400;
 var minSignX = 0;
 var maxSignX = 800;
 
-var layers = 6;
-var buildingCountRange = [40,10];
-var buildingHeightRange = [50,350];
-var buildingDensities = [.1,1.0];
-var meanWidths = [], meanHeights = [], meanDensity = [];
+var layers = 7;
+var buildingCountRange = [40,20];
+var buildingHeightRange = [30,100];
+//probabilty range for creating buildings
+var buildingDensities = [.1,.9];
+//probability range for creating windows
+var windowDensities = [.1,.2];
+var meanWidths = [], meanHeights = [], meanDensity = [], meanWindowDensity = [];
 var meanWidth = 50.0;
 var sdWidth = 10.0;
 
 var buildings = [];
 
 function preload() {
-// shadow = loadImage("/img/bat-rhazes-02.png");
+// shadow = loadImage("assets/bat-rhazes-02.png");
  shadow = loadImage("/img/bat-rhazes-alpha-02.png");
 }
 
+function renderBuildingLayers(canvasLayer,beginLayer, endLayer) {
+
+}
 
 function setup() {
-  var canvas = createCanvas(900,300);
-  canvas.parent("p5container");
-  building = buildBuilding(50,90,50,200,[50,50,50]); //new Building(50,90,50,200, [50,50,50] );
+  var _canvas = createCanvas(900,300);
+  _canvas.parent('p5container');
   noStroke();
 
   //initialize building dimensions by layers
@@ -135,46 +145,74 @@ function setup() {
     meanWidths.push(  lerp(width/buildingCountRange[0], width/buildingCountRange[1],t) );
     meanHeights.push( lerp(buildingHeightRange[0],buildingHeightRange[1],t) );
     meanDensity.push( lerp(buildingDensities[0],buildingDensities[1],t) );
+    meanWindowDensity.push( lerp(windowDensities[0], windowDensities[1],t ) );
   }
+
+
+
   var baseline = height;
-///* 
-  for(var i=0; i<1; i++) {
+  for(var i=0; i<layers/2.0; i++) {
     var pos = 0;
-    var ind = 0;
     while(pos < width) {
-//      var bw = randomGaussian(meanWidths[i], .20*meanWidths[i]);
-      var bw =  random(.7*meanWidths[i],1.3*meanWidths[i]);
+      var bw =  random(.9*meanWidths[i],1.1*meanWidths[i]);
       var bh =  random(.7*meanHeights[i],1.3*meanHeights[i]);
-//     var bh = randomGaussian(meanHeights[i], .20*meanHeights[i]);
-      buildings[ind] = buildBuilding(pos, baseline-bh,bw,bh, [100,100,100]);
-
-      pos += buildings[ind].w; 
-      ind++;
-    }
-
-    
-  }
-  bLayer = createGraphics(width,height);
-    bLayer.background(255);
-    bLayer.noStroke();
-    for(var i=0; i < buildings.length; ++i) {
-	if(random() > 0.1) {
-		var b = buildings[i];
-		bLayer.fill(b.color);
-	 	bLayer.rect(b.l,b.t,b.w,b.h);
-	        bLayer.fill(255);
-		for(var j=0; j < b.windows.length; ++j) {
-		   bLayer.rect(b.windows[j].x, b.windows[j].y, b.windows[j].w, b.windows[j].h);
-		}
+	var bldg = buildBuilding(pos, baseline-bh,bw,bh, random(10,100),meanWindowDensity[i]); 
+	pos += bldg.w; 
+ 	var shouldAdd = random();
+	if(shouldAdd > meanDensity[i]) {
+	      buildings.push(bldg);
 	}
-
     }
-}
+  }
+  bLayer1 = createGraphics(width,height);
+
+    bLayer1.background(255,0);
+    bLayer1.noStroke();
+    for(var i=buildings.length-1; i >= 0; i--) {
+		var b = buildings[i];
+		bLayer1.fill(b.color);
+	 	bLayer1.rect(b.l,b.t,b.w,b.h);
+		for(var j=0; j < b.windows.length; ++j) {
+	           bLayer1.fill(b.windows[j].col);
+		   bLayer1.rect(b.windows[j].x, b.windows[j].y, b.windows[j].w, b.windows[j].h);
+		}
+    }
+
+    buildings = [];
+  for(var i=floor(layers/2.0); i<layers ; i++) {
+    var pos = 0;
+    while(pos < width) {
+      var bw =  random(.9*meanWidths[i],1.1*meanWidths[i]);
+      var bh =  random(.7*meanHeights[i],1.3*meanHeights[i]);
+	var bldg = buildBuilding(pos, baseline-bh,bw,bh, random(0,90),meanWindowDensity[i]); 
+	pos += bldg.w; 
+ 	var shouldAdd = random();
+	if(shouldAdd > meanDensity[i]) {
+	      buildings.push(bldg);
+	}
+    }
+  }
+  bLayer2 = createGraphics(width,height);
+
+    bLayer2.background(255);
+    bLayer2.noStroke();
+    for(var i=buildings.length-1; i >= 0; i--) {
+		var b = buildings[i];
+		bLayer2.fill(b.color);
+	 	bLayer2.rect(b.l,b.t,b.w,b.h);
+		for(var j=0; j < b.windows.length; ++j) {
+	           bLayer2.fill(b.windows[j].col);
+		   bLayer2.rect(b.windows[j].x, b.windows[j].y, b.windows[j].w, b.windows[j].h);
+		}
+    }
+ }
 
 function draw() {
   background(255);
-  image(bLayer,0,0);
+  image(bLayer2,0,0);
   drawRhazsign(); 
+
+  image(bLayer1,0,0);
 // building.draw(); 
 
  // drawRhazsign();
