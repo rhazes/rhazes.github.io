@@ -87,7 +87,9 @@ Building.prototype.buildWindows = function() {
 };
 */
 var imgx = 650;
-var imgy = 50; 
+var imgy = -25; 
+var v1offx = 52, v1offy = 82, v2offx = 191, v2offy = 165;
+var col = [150,100];
 function drawRhazsign() {
 
   var cosinterp = cos(millis() * rate);
@@ -95,10 +97,10 @@ function drawRhazsign() {
 //  var imgx = map(cosinterp,-1.0,1.0,minSignX,maxSignX);
 //  var imgy = map(sininterp,0,1.0,50,0);
 //  imgx = 400; imgy = 200;
-  fill(150,150,150,100);
+  fill(col);
   beginShape();
-  vertex(imgx,imgy + 0.5 * shadow.height);
-  vertex(imgx + shadow.width, imgy + .75 * shadow.height);
+  vertex(imgx + v1offx,imgy + v1offy);
+  vertex(imgx + v2offx, imgy + v2offy);
   vertex(500, height - 30);
   endShape(CLOSE);
 
@@ -127,7 +129,7 @@ var buildings = [];
 
 function preload() {
 // shadow = loadImage("assets/bat-rhazes-02.png");
- shadow = loadImage("/img/bat-rhazes-alpha-02.png");
+ shadow = loadImage("/img/bat-rhazes-distorted.png");
 }
 
 function renderBuildingLayers(canvasLayer,beginLayer, endLayer) {
