@@ -87,9 +87,9 @@ Building.prototype.buildWindows = function() {
 };
 */
 var imgx = 650;
-var imgy = -25; 
-var v1offx = 52, v1offy = 82, v2offx = 191, v2offy = 165;
-var col = [150,100];
+var imgy = 5; 
+var v1offx = 58, v1offy = 124, v2offx = 137, v2offy = 138;
+var col = [200,200,200,100];
 function drawRhazsign() {
 
   var cosinterp = cos(millis() * rate);
