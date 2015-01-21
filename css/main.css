@@ -42,7 +42,8 @@ body#landingPage {
       margin-right: 0; }
     body#landingPage .frame a {
       font-size: 200%;
-      border: none; }
+      border: none;
+      color: #333; }
   body#landingPage #p5container {
     float: left;
     display: block;
