@@ -1,7 +1,11 @@
 ---
-layout: work
+layout: work-youtube
 projectTitle: Forks In Sockets
 projectDate: 2013
+videolinks:
+  - vela: C1I651OKLkg
+  - Interruption123: plgFQBT5LvY
+  - PlainChanges: s39dyz6aG9E
 permalink: made/forks-in-sockets/index.html
 tags: vj performance collaboration
 ---
@@ -10,7 +14,7 @@ _The young dissident naturally wanted to play tricks - and misuse all technology
 _-Erkki Kurenniemi_
 
 
-Forks in Sockets brings together people that are interested in doing strange things with electricity in a cross-disciplinary context. This was the first public performance in which the exciting results of these interdisciplinary collaborations are shared with the public. See the performance here: [Forks In Sockets](http://fis.vicinnovate.ac.nz/index.html).
+Forks in Sockets brings together people that are interested in doing strange things with electricity in a cross-disciplinary context. This was the first public performance in which the exciting results of these interdisciplinary collaborations are shared with the public. See videos below and read more about the performance here: [Forks In Sockets](http://fis.vicinnovate.ac.nz/index.html).
 
 ![Forks In Sockets][img01]
 _photo credit Kevin Cook_

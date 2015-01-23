@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+    	<section>
+ <!-- 			{% include banner.html %} -->
+
+			<section id="navbar">
+				{% include mainNav.html %}
+			</section>					
+
+			<section class="work">
+				<section class="projectTitle">
+					<h1>
+					{{ page.projectTitle }}</br>
+					{{ page.projectDate }}
+					</h1>
+				</section>
+				<article class="projectDescription">
+					{{ content }}
+
+
+				{% for item in page.videolinks %}
+				   {% for i in item %}
+    <iframe width="480" height="360" src="//www.youtube.com/embed/{{ i[1] }}" frameborder="0" allowfullscreen></iframe><br /><br />
+Video for {{ i[0] }} performance.
+				   {% endfor %}
+
+				{% endfor %}
+	
+				</article>
+				<aside class="projectTags">
+					{{ page.tags }}
+				</aside>
+		</section>			
+		</section>
+    </body>
+</html>
