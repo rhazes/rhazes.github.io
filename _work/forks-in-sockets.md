@@ -21,7 +21,7 @@ _photo credit Kevin Cook_
 
 In 2012 engineer Josh Bailey, media artist Anne Niemetz and sonic artist Dugal McKinnon first brought musicians and engineers together to perform with and through the Tesla coil. The project has since grown as an experimental playground for science and art, and now includes engineers, contemporary composers, designers and artists.
 
-
+  
 ### Visuals
 
 I designed and performed the visuals for Forks and Sockets. The concept behind the visuals was human fascination with the mythical powers of science and nature. Throughout history humans have been enthralled with the awesome power and beauty of scientific processes as they manifest in nature. This fascination has led to various experiments to control and direct scientific processes for enhanced productivity, on one hand, and to create awe-inspiring demonstrations on the other. These experiments are simultaneously the genesis of innovation, production, destruction and demise.
